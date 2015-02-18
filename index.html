@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://cdn.firebase.com/js/client/2.2.0/firebase.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+
+			
+			<div class="add-todo">
+				<div class="left">
+					<input class="add-todo-input" type="text" placeholder="todo..." value="countdown">
+				</div>
+				<div class="date">
+					<input class="add-todo-date" placeholder="mnth">/<input class="add-todo-date" placeholder="day"> @
+					<input class="add-todo-date" placeholder="hr">:<input class="add-todo-date" placeholder="min">
+				</div>
+				<div>
+					<button class="add-todo-btn">Add</button>
+				</div>
+			</div>
+			<div class="half-page">
+				<h1>To-Do</h1>
+				<div class="todo-list"></div>
+			</div>
+
+
+			<div class="half-page">
+				<h1>Done</h1>
+				<div class="todo-list">
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="utils.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</html>

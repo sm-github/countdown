@@ -1,0 +1,164 @@
+.container {
+	padding: 4rem;
+	white-space: nowrap;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif
+}
+
+.add-todo {
+	margin: 0 auto 1rem;
+	text-align: center;
+	line-height: 2rem;
+}
+
+.add-todo .date input {
+	width: 2rem;
+	text-align: center;
+}
+
+.add-todo input {
+	padding: .5rem 8px;
+	font-size: 1rem;
+}
+
+.add-todo div {
+	display: inline-block;
+}
+
+.half-page {
+	width: 50%;
+	display: inline-block;
+	/*border: 1px solid #ccc;*/
+	vertical-align: top;
+}
+
+.todo-list {
+	margin: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3rem;
+}
+
+.todo {
+	/*height: 3rem;*/
+	position: relative;
+	cursor: pointer;
+	padding-left: 1rem; 
+}
+
+.delete-todo {
+	position: absolute;
+	left: -28px;
+	bottom: 14px;
+	border: 1px solid;
+	border-radius: 99px;
+	width: 20px;
+	text-align: center;
+}
+
+.delete-todo:hover {
+	color: red;
+}
+
+.todo:hover {
+	background-color: #ddd;
+}
+
+.todo::before {
+	border-bottom: 1px dashed #ccc;
+	/* background-color: #1D1D1D; */
+	height: 1px;
+	/* box-shadow: 0px 1px 3px #444; */
+	width: 100%;
+	content: "";
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	z-index: -1;
+}
+
+.todo .todo-name {
+	line-height: 3rem;
+}
+
+.due-date {
+	float: right;
+	padding: 4px 4px;;
+	background-color: black;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif
+}
+
+
+.due-date div {
+	color: white;
+	position: relative;
+	padding: 7px 10px 8px;
+	margin: 2px;
+	border-radius: 3px;
+	display: inline-block;
+	border-top: 1px solid #B2B2B2;
+	
+	
+	background-color: black;
+	/* fallback */
+	background-color: #58575B;
+	background: url(images/linear_bg_2.png);
+	background-repeat: repeat-x;
+
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, left top, right top, from(#2F2727), color-stop(0.5, #2F2727), to(#58575B));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #2F2727, #58575B, #2F2727);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #2F2727, #58575B, #2F2727);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #2F2727, #58575B, #2F2727);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #2F2727, #58575B, #2F2727);
+}
+
+.due-date div::after {
+	background-color: #1D1D1D;
+	height: 1px;
+	box-shadow: 0px 1px 3px #444;
+	width: 100%;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+
+.half-page h1{
+	text-align: center;
+}
+
+input {
+	box-shadow: none;
+	border-radius: 3px;
+	border: 1px solid;
+	vertical-align: bottom;
+	outline: none;
+}
+
+input:focus {
+	border-color: steelblue;
+}
+
+button {
+	vertical-align: bottom;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 11px 1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ddd;
+}
+
+button:active {
+	background-color: green;
+}
